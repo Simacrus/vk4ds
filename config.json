@@ -1,0 +1,31 @@
+{
+	"clusters": [
+		{
+			"vk": {
+				"token": "bf3331debb10c430579ebda7a03365abb08ca3552aeb2bed80139b0f75266a7d7ed90ab1e6354cedc9343",
+				"group_id": "overhear_ps2",
+				"keywords": [],
+				"words_blacklist": [],
+				"filter": false,
+				"donut": false,
+				"ads": false,
+				"longpoll": true,
+				"interval": 30
+			},
+			"discord": {
+				"webhook_urls": [
+					"https://discord.com/api/webhooks/976496866726404208/c_TbdVV0vRprFZPr6p3lp_m1LMHE_YPQ_Lx6WT-0f_WEDiEgWktiuJ_64DnGM_ekY9oT"
+				],
+				"username": "",
+				"avatar_url": "",
+				"content": "",
+				"color": "#FF4F0D",
+				"author": true,
+				"copyright": true,
+				"date": true,
+				"exclude_content": []
+			}
+		}
+	],
+	"version_dont_modify_me": 5
+}
