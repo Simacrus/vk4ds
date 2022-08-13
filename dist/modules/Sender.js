@@ -17,13 +17,13 @@ export class Sender extends Message {
         ]);
         const hasInCache = last === date || published.includes(date);
         if (hasInCache) {
-            return console.log(`[!] Новых записей в кластере #${index} нет.`);
+            return console.log(`[!] Novih zapisey v klastere #${index} net.`);
         }
         const isNotFromGroupName = longpoll && filter && owner_id !== from_id;
         const hasAds = !ads && marked_as_ads;
         const hasDonut = !donutStatus && donut?.is_donut;
         if (isNotFromGroupName || hasAds || hasDonut) {
-            return console.log(`[!] Новая запись в кластере #${index} не соответствует настройкам конфигурации, игнорируем ее.`);
+            return console.log(`[!] Novaya zapis v klastere #${index} ne sootvetstvyet nastroykam configuratsii, ignorim ee.`);
         }
         const hasKeywords = new Keywords({
             type: KeywordsType.KEYWORDS,
@@ -67,7 +67,7 @@ export class Sender extends Message {
                 console.error(reason);
             });
         }
-        console.log(`[VK2Discord] Запись в кластере #${index} опубликована.`);
+        console.log(`[VK2Discord] Zapis v klastere #${index} opublikovana.`);
     }
     async pushDate() {
         const { cluster: { vk: { group_id }, storage }, payload: { date } } = this;
